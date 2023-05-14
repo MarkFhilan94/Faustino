@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--- Custom css file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--- Jquery cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    $('#menu').click(function(){
+      $(this).toggleClass('fa-times');
+      $('header').toggleClass('toggle');
+    });
+  
+    $(window).on('scroll load',function(){
+      $('#menu').removeClass('fa-times');
+      $('header').removeClass('toggle');
+    });
+  });
+  </script>
+
+  <title>My Profile</title>
+</head>
+<body>
+  <!-- Header Start Section -->
+
+  <header>
+    <div class="user">
+      <img src="/Web-System/img/FB.jpg" alt="">
+      <h3 class="name">Mark Fhilan R. Faustino</h3>
+      <p class="par">A Student of Bicol University</p>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#family">Family Background</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header End Section -->
+
+  <div id="menu" class="fas fa-bars"></div>
+  <!--- Home Starting Section -->
+
+  <section class="home" id="home">
+    <h3>Hello!</h3>
+    <h1>I'm <span>Mark Fhilan R. Faustino</span></h1>
+    <p>I am Mark Fhilan R. Faustino, a 2nd Year Student of Bicol University College of Science 
+      taking up the Bachelor of Science in Information Technology. Currently residing at Em's Barrio South Legazpi City Albay.</p>
+    <!--<a href="#aboutme"><button class="btn">About me <i class="fas fa-user"></i></button></a> -->
+  </section>
+  <!--- Home Ending Section -->
+
+
+  <!--- About Me Starting Section -->
+  <section class="about" id="about">
+    <h1 class="heading"><span>about</span> me</h1>
+    <div class="row">
+      <div class="info">
+        <h3><span>Name:</span> Mark Fhilan R. Faustino</h3>
+        <h3><span>Age: </span> 21 years old</h3>
+        <h3><span>Address:</span> Paloyon Nabua Camarines Sur</h3>
+        <h3><span>Phone No.:</span> 09563244438</h3>
+        <h3><span>Birthday:</span> March 15, 2002</h3>
+        <h3><span>Language:</span> English, Tagalog, & Bicol</h3>
+        <h3><span>Height:</span> 167cm</h3>
+        <h3><span>Weight:</span> 60kgs</h3>
+        <a href="#aboutme"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+      </div>
+    </div>
+  </section>
+  <!--- About Me Ending Section -->
+
+
+  <!--- Family Starting Section-->
+  <section class="family" id="family">
+    <h1 class="heading"><span>my</span> family</h1>
+    <div class="row">
+      <div class="info">
+        <h3><span>Father:</span>Edwin P. Faustino</h3>
+        <h3><span>Mother:</span>Emelyn R. Faustino</h3>
+        <h3><span></span></h3>
+        <h3><span>Eldest Brother:</span> Ryan R. Faustino</h3>
+        <h3><span>Eldest Sister:</span> Edlyn Jane F. Simbulan</h3>
+        <h3><span>2nd Brother:</span> John Mark R. Faustino</h3>
+        <a href="#family"><button class="btn">Learn More!</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!--- Family Ending Section-->
+
+  
+  <!--- Education Starting Section -->
+  <section class="education" id="education">
+    <h1 class="heading"><span>My Educational</span> Background</h1>
+    <div class="container">
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2015</span>
+        <h3>Elementary</h3>
+        <p>I graduated Elementary at Nabua Central Pilot School at March 2015</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>Junior High</h3>
+        <p>I completed Junior High at Nabua National High School at March 2019</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>Senior High</h3>
+        <p>I graduated Senior High at Nabua National High School at </p>
+      </div>
+      <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Collge(Present)</span>
+        <h3>Currently still attending College at Bicol University</h3>
+        <p></p>
+      </div>
+    </div>
+    <a href="#family"><button class="btn">Learn More!</button></a>
+
+  </section>
+
+  <!--- Education Ending Section -->
+
+</body>
+</html>
