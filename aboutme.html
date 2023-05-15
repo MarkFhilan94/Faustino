@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--- Custom css file -->
+  <link rel="stylesheet" href="aboutme.css">
+
+  <!--- Jquery cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    $('#menu').click(function(){
+      $(this).toggleClass('fa-times');
+      $('header').toggleClass('toggle');
+    });
+  
+    $(window).on('scroll load',function(){
+      $('#menu').removeClass('fa-times');
+      $('header').removeClass('toggle');
+    });
+  });
+  </script>
+
+  <title>About Me</title>
+</head>
+<body>
+  <!-- Header Start Section -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobby">My Hobbies</a></li>
+        <li><a href="#goal">My Goals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header End Section -->
+
+  <div id="menu" class="fas fa-bars"></div>
+
+
+  <!--- About Section Starts-->
+  <section class="about" id="about">
+    <div class="main">
+      <img src="/Web-System/img/profile.jpg">
+      <div class="title">
+        <h1><span>About </span>Me</h1>
+        <p>I am Mark Fhilan R. Faustino, 21yrs old, Born on March 15, 2002 a 2nd Year Student of Bicol University College of Science 
+          taking up the Bachelor of Science in Information Technology. Permanently residing at Paloyon Nabua Camarines Sur.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--- About Section Starts-->
+
+
+  <!--- Hobby Section Starts-->
+  <section class="hobby" id="hobby">
+    <h1 class="heading">my<span> hobbies</span></h1>
+    <div class="main">
+      <img src="/Web-System/img/collage.jpg">
+      <div class="title">
+        <p>My Hobbies was playing online games such as Mobile Legends, Genshin Impact, and other games that interest me or
+          games that can be played along with my friends cause playing games by yourself can be boring at times. I also like
+          to watch movies and animes, I also like to read anime manga.
+      </div>
+    </div>
+  </section>
+  <!--- Hobby Section Ends-->
+
+
+  <!--- Goal Section Starts-->
+  <section class="goal" id="goal">
+    <h1 class="heading">my<span> goals</span></h1>
+    <div class="main">
+      <img src="/Web-System/img/goal.jpg">
+      <div class="title">
+        <p>My Goals in my life. First is for me to be able to graduate to the course that I chose because I want my parents
+          to be proud of me. My 2nd goal in my life is to be able to travel to different places along with my my parents
+          because this is my way of saying Thank You for them for raising me the way I am now. My 3rd and final goal in my 
+          life is to become financially stable and for me to become the best version of myself.
+        </p>
+      </div>
+  </section>
+  <!--- Goal Section Ends-->
+
+</body>
+</html>
