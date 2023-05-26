@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--- font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--- Custom css file -->
+<link rel="stylesheet" href="education.css">
+
+<!--- Jquery cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+  $('#menu').click(function(){
+    $(this).toggleClass('fa-times');
+    $('header').toggleClass('toggle');
+  });
+
+  $(window).on('scroll load',function(){
+    $('#menu').removeClass('fa-times');
+    $('header').removeClass('toggle');
+  });
+});
+</script>
+
+  <title>My Educational Background</title>
+</head>
+<body>
+  <!-- Header Start Section -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#home">Main</a></li>
+        <li><a href="#elem">Elementary</a></li>
+        <li><a href="#junior">Junior High School</a></li>
+        <li><a href="#senior">Senior High School</a></li>
+        <li><a href="#college">College</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header End Section -->
+
+
+  <!--- Home Starting Section -->
+
+  <section class="home" id="home">
+    <h3>Hello!</h3>
+    <p><span>WELCOME!</span>  This is the page about my Educational Background, where this page explains about
+      the start of my education in which i wasn't able to add my nursery and kindergarten due to lack of informations.
+    </p>
+  </section>
+  <!--- Home Ending Section -->
+
+
+  <div id="menu" class="fas fa-bars"></div>
+  
+<!--- Elementary Section Starts-->
+<section class="elem" id="elem">
+  <h1 class="heading"><span> Elementary</span></h1>
+  <div class="main">
+    <img src="/Web-System/img/ncps.jpg" alt="">
+    <div class="title">
+      <p>The picture is the School(Nabua Central Pilot School) where I spend my 6years 
+        in Elementary, during that 6years was like a roller coaster ride where every 
+        grade level I met new classmates and some other that are already familiar faces.
+        This school was somehow part of my childhood memories where I spend 8hrs of my 
+        weekdays listening to lectures, doing activities and projects but the most enjoyable   
+        part was during the times when we play games.
+      </p>
+    </div>
+</section>
+<!--- Elementary Section Ends-->
+
+
+<!--- Junior Section Starts-->
+<section class="junior" id="junior">
+  <h1 class="heading">Junior<span> High School</span></h1>
+  <div class="main">
+    <img src="/Web-System/img/junior.jpg" alt=""l>
+    <div class="title">
+      <p>Nabua National High School was where I spend my 4years in Junior High and 2years 
+        in Senior High. Junior High was the most memorable time I had even though I belong
+        to a star section in Junior High, the people in the picture was still my Friends
+        where we still have a communication to one another. 
+      </p>
+    </div>
+</section>
+<!--- Junior Section Ends-->
+
+
+<!--- Senior Section Starts-->
+<section class="senior" id="senior">
+  <h1 class="heading">Senior<span> High School</span></h1>
+  <div class="main">
+    <img src="/Web-System/img/senior.jpg" alt="">
+    <div class="title">
+      <p>Senior High was the time where I was able to meet new classmates that graduated from 
+        different schools but it was also the shortest time I had studying since it is only 10 months and 
+        by the end of the semester of grade 11 the pandemic started which was expected to
+        last only by 2 weeks but become 2 months. So we spend grade 12 at home doing modular
+        and also do an online graduation in which we are the only batch that experienced it.
+      </p>
+    </div>
+</section>
+<!--- Senior Section Ends-->
+
+
+<!--- College Section Starts-->
+<section class="college" id="college">
+  <h1 class="heading"><span> College</span></h1>
+  <div class="main">
+    <img src="/Web-System/img/bu.jpeg" alt="">
+    <div class="title">
+      <p>How time flies so fast that I will already become a 3rd year college at Bicol 
+        University, being able to attend in this University was very unexpected for me
+        since I was not expecting of being able to pass the BUCESS, but after hearing
+        that I passed, I convinced my parents that I want to attend in this University
+        since it was only a one time chance and it was totally worth it.
+      </p>
+    </div>
+</section>
+<!--- College Section Ends-->
+
+</body>
+</html>

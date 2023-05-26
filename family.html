@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--- Custom css file -->
+  <link rel="stylesheet" href="family.css">
+
+  <!--- Jquery cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    $('#menu').click(function(){
+      $(this).toggleClass('fa-times');
+      $('header').toggleClass('toggle');
+    });
+  
+    $(window).on('scroll load',function(){
+      $('#menu').removeClass('fa-times');
+      $('header').removeClass('toggle');
+    });
+  });
+  </script>
+
+  <title>My Family</title>
+  
+</head>
+<body>
+  <!-- Header Start Section -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#family">My Family</a></li>
+        <li><a href="#parent">My Parents</a></li>
+        <li><a href="#brother">My Eldest Brother</a></li>
+        <li><a href="#sister">My Sister</a></li>
+        <li><a href="#brother2">My 2nd Brother</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header End Section -->
+
+  <div id="menu" class="fas fa-bars"></div>
+
+  <!--- Family Section Starts-->
+  <section class="family" id="family">
+    <h1 class="heading1">My<span> Family</span></h1>
+    <div class="main1">
+      <img src="/Web-System/img/family.jpg" alt="">
+      <div class="title1">
+        <p>This is the only Family photo that I was able to find that we were still complete in one frame
+          since some of some incidents that happened or by other reasons like my brothers are busy in work 
+          or some other things
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <!--- Family Section Ends-->
+
+
+  <!--- Parent Section Starts-->
+  <section class="parent" id="parent">
+    <h1 class="heading">My<span> Parents</span></h1>
+    <div class="main">
+      <img src="/Web-System/img/parents.jpg" alt="">
+      <div class="title">
+        <p>In this picture you can see my parents, my mother(Emelyn R. Faustino) and my
+          father(Edwin P. Faustino). This photo was the only picture I was able to find 
+          that was clear and not very blurred, since my Father Edwin Faustino doesn't 
+          favor taking pictures very much. So this picture was somehow very important to us.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <!--- Parent Section Ends-->
+
+
+  <!--- Brother Section Starts-->
+  <section class="brother" id="brother">
+    <h1 class="heading">My Eldest<span>Brother</span></h1>
+    <div class="main">
+      <img src="/Web-System/img/ryan.jpg" alt="">
+      <div class="title">
+        <p>So this is the eldest sibling in our family, his name is Ryan R. Faustino, he's 
+          a Civil Engineer and now working abroad to support me in my studies while also 
+          supporting his own family.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <!--- Brother Section Ends-->
+
+
+  <!--- Sister Section Starts-->
+  <section class="sister" id="sister">
+    <h1 class="heading">My<span> Sister</span></h1>
+    <div class="main">
+      <img src="/Web-System/img/edlyn.jpg" alt="">
+      <div class="title">
+        <p>So this is my Sister(Edlyn Jane F. Simbulan), she is the only girl among my siblings.
+          She is now a Teacher and she also have her own family.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <!--- Sister Section Ends-->
+
+
+  <!--- Brother2 Section Starts-->
+  <section class="brother2" id="brother2">
+    <h1 class="heading">My 2nd<span> Brother</span></h1>
+    <div class="main">
+      <img src="/Web-System/img/jm.jpg" alt="">
+      <div class="title">
+        <p>So this is my 2nd brother(John Mark R. Faustino) that has a 9yrs gap between our age, so basically he was
+          already a graduate and also had a job which is a Fireman. He also has his own family.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <!--- Brother2 Section Ends-->
+
+</body>
+</html>
